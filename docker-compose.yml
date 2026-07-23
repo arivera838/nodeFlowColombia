@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nodeflow-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodeflow_colombia_landing
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
