@@ -7,6 +7,7 @@ import { AutomationShowcase } from '../components/AutomationShowcase';
 import { RoiCalculator } from '../components/RoiCalculator';
 import { Footer } from '../components/Footer';
 import { ContactModal } from '../components/ContactModal';
+import { WhatsAppWidget } from '../components/WhatsAppWidget';
 
 export const Home = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -16,7 +17,7 @@ export const Home = () => {
       <SEO
         title="NodeFlow Colombia | Desarrollo de Software, n8n, WhatsApp Bots & IA"
         description="Soluciones integrales de desarrollo de software a medida, automatizaciones avanzadas con n8n, chatbots inteligentes de WhatsApp API y soporte técnico en Medellín, Colombia."
-        canonical="https://nodeflow.co"
+        canonical="https://nodeflow.andresrivera.dev"
       />
 
       <Navbar onOpenContact={() => setIsContactOpen(true)} />
@@ -31,6 +32,7 @@ export const Home = () => {
       <Footer onOpenContact={() => setIsContactOpen(true)} />
 
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+      <WhatsAppWidget />
     </div>
   );
 };

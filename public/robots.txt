@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://nodeflow.co/sitemap.xml
+Sitemap: https://nodeflow.andresrivera.dev/sitemap.xml

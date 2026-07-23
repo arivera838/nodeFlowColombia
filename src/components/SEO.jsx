@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet-async';
 export const SEO = ({
   title = "NodeFlow Colombia | Desarrollo de Software, n8n, WhatsApp Bots & IA",
   description = "Soluciones integrales de desarrollo de software a medida, automatizaciones avanzadas con n8n, chatbots de WhatsApp con IA y soporte DevOps en Medellín, Colombia.",
-  canonical = "https://nodeflow.co",
+  canonical = "https://nodeflow.andresrivera.dev",
   ogType = "website",
-  ogImage = "https://nodeflow.co/og-image.png"
+  ogImage = "https://nodeflow.andresrivera.dev/og-image.png"
 }) => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -43,9 +43,8 @@ export const SEO = ({
       "closes": "18:00"
     },
     "sameAs": [
-      "https://github.com/nodeflow-co",
-      "https://linkedin.com/company/nodeflow-colombia",
-      "https://instagram.com/nodeflow.co"
+      "https://github.com/arivera838/nodeFlowColombia",
+      "https://linkedin.com/company/nodeflow-colombia"
     ],
     "description": description,
     "hasOfferCatalog": {
